@@ -1,0 +1,23 @@
+/* Minimal styles: typography, spacing, and the original purple/peach/mint palette. */
+:root { --purple: #8768D1; --lavender: #EEE8FF; --peach: #FFEBDF; --mint: #E4F7ED; --ink: #2B2640; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: var(--ink); line-height: 1.6; background: #fff; }
+.container { width: min(920px, 90%); margin: 0 auto; }
+.site-header { padding: 20px 0; border-bottom: 1px solid var(--lavender); }
+.brand { color: var(--purple); font-size: 1.4rem; }
+.hero { padding: 80px 0; }
+.eyebrow { color: var(--purple); font-weight: bold; }
+h1 { max-width: 720px; font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.15; margin: 12px 0 20px; }
+h2 { font-size: 1.65rem; margin: 0 0 12px; }
+h3 { font-size: 1.1rem; margin-bottom: 6px; }
+p { margin-top: 0; }
+.intro { max-width: 690px; font-size: 1.1rem; }
+.note { color: #625A76; }
+.section-soft { background: var(--lavender); padding: 55px 0; }
+.topics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 30px; }
+.topic { border-top: 3px solid var(--purple); padding-top: 10px; }
+.topic:nth-child(2) { border-color: #E5A98C; }
+.topic:nth-child(3) { border-color: #81BDA1; }
+.closing { padding: 65px 0; }
+.site-footer { padding: 20px 0; background: var(--peach); font-size: .9rem; }
+@media (max-width: 650px) { .hero { padding: 55px 0; } .topics { grid-template-columns: 1fr; gap: 12px; } }
